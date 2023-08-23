@@ -1,4 +1,4 @@
-package com.pa_listingsgoto_app;
+package com.app.pa_listingsgoto_dev;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
@@ -13,7 +13,7 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "pa_listingsgoto_app";
+    return "app.pa_listingsgoto_dev";
   }
 
   /**

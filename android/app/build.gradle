@@ -73,9 +73,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.pa_listingsgoto_app"
+    namespace "com.app.pa_listingsgoto_dev"
     defaultConfig {
-        applicationId "com.pa_listingsgoto_app"
+        applicationId "com.app.pa_listingsgoto_dev"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

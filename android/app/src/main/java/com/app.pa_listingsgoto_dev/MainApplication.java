@@ -1,4 +1,4 @@
-package com.pa_listingsgoto_app;
+package com.app.pa_listingsgoto_dev;
 
 import android.app.Application;
 import com.facebook.react.PackageList;
