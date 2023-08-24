@@ -30,7 +30,7 @@ const WebScreen = (props) => {
             return <WebView
                 injectedJavaScript={INJECTED_JAVASCRIPT}
                 onMessage={onMessage}
-                source={{ uri: `https://www.dev.listingsgoto.com/` }} style={{ marginTop: 20 }} />
+                source={{ uri: `https://listingsgoto.com/` }} style={{ marginTop: 20 }} />
     }
 
     return (
