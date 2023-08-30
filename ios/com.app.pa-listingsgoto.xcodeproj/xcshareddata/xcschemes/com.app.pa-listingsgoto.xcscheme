@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "app.pa_listingsgoto.app"
-               BlueprintName = "app.pa_listingsgoto"
-               ReferencedContainer = "container:app.pa_listingsgoto.xcodeproj">
+               BuildableName = "com.app.pa-listingsgoto.app"
+               BlueprintName = "com.app.pa-listingsgoto"
+               ReferencedContainer = "container:com.app.pa-listingsgoto.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "app.pa_listingsgotoTests.xctest"
-               BlueprintName = "app.pa_listingsgotoTests"
-               ReferencedContainer = "container:app.pa_listingsgoto.xcodeproj">
+               BuildableName = "com.app.pa-listingsgotoTests.xctest"
+               BlueprintName = "com.app.pa-listingsgotoTests"
+               ReferencedContainer = "container:com.app.pa-listingsgoto.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "app.pa_listingsgoto.app"
-            BlueprintName = "app.pa_listingsgoto"
-            ReferencedContainer = "container:app.pa_listingsgoto.xcodeproj">
+            BuildableName = "com.app.pa-listingsgoto.app"
+            BlueprintName = "com.app.pa-listingsgoto"
+            ReferencedContainer = "container:com.app.pa-listingsgoto.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "app.pa_listingsgoto.app"
-            BlueprintName = "app.pa_listingsgoto"
-            ReferencedContainer = "container:app.pa_listingsgoto.xcodeproj">
+            BuildableName = "com.app.pa-listingsgoto.app"
+            BlueprintName = "com.app.pa-listingsgoto"
+            ReferencedContainer = "container:com.app.pa-listingsgoto.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
