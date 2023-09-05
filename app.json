@@ -1,5 +1,5 @@
 {
-  "//comment": "if android:'app.pa_listingsgoto' else if ios:'com.app.pa_listingsgoto'",
-  "name": "app.pa_listingsgoto",
+  "//comment": "if android:'app.pa_listingsgoto' else if ios:'com.app.pa-listingsgoto'",
+  "name": "com.app.pa-listingsgoto",
   "displayName": "PA Listingsgoto"
 }
