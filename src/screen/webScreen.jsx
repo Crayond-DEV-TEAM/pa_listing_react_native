@@ -4,35 +4,140 @@ import {
     SafeAreaView,
     StatusBar,
     StyleSheet,
+    View,
+    ActivityIndicator,
+    Platform
 } from 'react-native';
 
 import { WebView } from 'react-native-webview';
 
+import { request, PERMISSIONS, RESULTS } from 'react-native-permissions';
+import Geolocation from '@react-native-community/geolocation';
+// import Geocoding from 'react-native-geocoder-reborn';
+
 const INJECTED_JAVASCRIPT = `(function() {
-    const authLocalStorage = window.localStorage.getItem('auth_token');
+    const currentLocation = window.localStorage.getItem('current_location');
 
     const obj = {
-        authLocalStorage,
+        currentLocation,
     }
-
     const getItemLocalStorage = JSON.stringify(obj);
+
     window.ReactNativeWebView.postMessage(getItemLocalStorage);
 })();`;
 
 
 const WebScreen = (props) => {
+    const [status, setStatus] = React.useState(null);
+    
+    // let latitude = "";
+    // let longitude = "";
+    // let address = "";
+    // let city = "";
+    // let code = "";
+    // let country_name = "";
+    
+    const [visible, setVisible] = React.useState(true);
+    const [latitude, setLatitude] = React.useState("");
+    const [longitude, setLongitude] = React.useState("");
+    const [address, setAddress] = React.useState("");
+    const [city, setCity] = React.useState("");
+    const [code, setCode] = React.useState("");
+    const [country_name, setCountry_name] = React.useState("");
+
     const { diviceToken } = props;
+
     const onMessage = (payload) => {
-        console.log('payload asses', payload);
+        // console.log('payload getItemLocalStorage', payload);
     };
 
-    const WebviewRender = () => {
-            return <WebView
-                injectedJavaScript={INJECTED_JAVASCRIPT}
-                onMessage={onMessage}
-                source={{ uri: `https://listingsgoto.com/` }} style={{ marginTop: 20 }} />
-    }
+    
+    React.useEffect(() => {
+        async function requestLocationPermission() {
+            let getStatus = "";
+            if(Platform.OS === 'ios'){
+                getStatus = await request(PERMISSIONS.IOS.LOCATION_WHEN_IN_USE); // For iOS
+            }
+            else{
+                getStatus = await request(PERMISSIONS.ANDROID.ACCESS_FINE_LOCATION); // For Android
+            }
+            setStatus(getStatus)
+        }
+        requestLocationPermission();
 
+
+    }, []);
+
+    React.useEffect(() => {
+        getCurrentPosition = () => {
+            // Get the current location
+            Geolocation.getCurrentPosition(
+                async (position) => {
+                    const {latitude, longitude} = position.coords;
+                    await fetch('https://maps.googleapis.com/maps/api/geocode/json?address=' + latitude + ',' + longitude + '&key=' + "AIzaSyD2c4H1Ldomf95Y_dBG64KbNvE9tzmLDbk")
+                    .then((response) => response.json())
+                    .then((responseJson) => {
+                            // latitude = latitude;
+                            // longitude = longitude;
+                            // address = responseJson.results[0].formatted_address;
+                            // city = responseJson.results[0].address_components[5].long_name;
+                            // code = responseJson.results[0].address_components[6].short_name;
+                            // country_name = responseJson.results[0].address_components[6].long_name;
+
+                            console.log('ADDRESS GEOCODE is BACK!! => ' + JSON.stringify(responseJson));
+                            setLatitude(latitude);
+                            setLongitude(longitude);
+                            setCountry_name(responseJson.results[0].address_components[6].long_name);
+                            setCode(responseJson.results[0].address_components[6].short_name);
+                            setCity(responseJson.results[0].address_components[5].long_name);
+                            setAddress(responseJson.results[0].formatted_address);
+                        })
+                },
+                (error) => {
+                    console.error('Error getting location:', error);
+                },
+                { enableHighAccuracy: false, timeout: 20000, maximumAge: 1000 }
+            );
+            // Location permission has been granted by the user.
+        };
+        if (status === RESULTS.GRANTED) {
+            getCurrentPosition();
+        }
+    }, [status]);
+
+    const WebviewRender = () => {
+
+        return <WebView
+            injectedJavaScript={INJECTED_JAVASCRIPT}
+            onMessage={onMessage}
+            overScrollMode='never'
+            pullToRefreshEnabled={true}
+            onLoadEnd={() =>  {
+                setVisible(false)
+            }}
+            source={{ uri: `https://www.dev.listingsgoto.com/?device=mobile&latitude=${latitude}&longitude=${longitude}&address=${address}&city=${city}&code=${code}&country_name=${country_name}` }} style={{ marginTop: 20 }}
+            renderLoading={() => 
+                {
+                    if(visible){
+                        <ActivityIndicator
+                            style={{
+                                position: "absolute",
+                                top: 0,
+                                left: 0,
+                                right: 0,
+                                bottom: 0,
+                                jusityContent: "space-around",
+                                flexWrap: "wrap",
+                                alignContent: "center",
+                            }}
+                            size="large"
+                        />
+                    }
+                }
+            } 
+            />
+    }
+    // 
     return (
         <SafeAreaView style={styles.container}>
             <WebviewRender />
