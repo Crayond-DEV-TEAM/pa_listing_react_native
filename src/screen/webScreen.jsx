@@ -29,14 +29,14 @@ const INJECTED_JAVASCRIPT = `(function() {
 
 const WebScreen = (props) => {
     const [status, setStatus] = React.useState(null);
-    
+
     // let latitude = "";
     // let longitude = "";
     // let address = "";
     // let city = "";
     // let code = "";
     // let country_name = "";
-    
+
     const [visible, setVisible] = React.useState(true);
     const [latitude, setLatitude] = React.useState("");
     const [longitude, setLongitude] = React.useState("");
@@ -48,17 +48,17 @@ const WebScreen = (props) => {
     const { diviceToken } = props;
 
     const onMessage = (payload) => {
-        // console.log('payload getItemLocalStorage', payload);
+        console.log('payload getItemLocalStorage', payload);
     };
 
-    
+
     React.useEffect(() => {
         async function requestLocationPermission() {
             let getStatus = "";
-            if(Platform.OS === 'ios'){
+            if (Platform.OS === 'ios') {
                 getStatus = await request(PERMISSIONS.IOS.LOCATION_WHEN_IN_USE); // For iOS
             }
-            else{
+            else {
                 getStatus = await request(PERMISSIONS.ANDROID.ACCESS_FINE_LOCATION); // For Android
             }
             setStatus(getStatus)
@@ -73,10 +73,10 @@ const WebScreen = (props) => {
             // Get the current location
             Geolocation.getCurrentPosition(
                 async (position) => {
-                    const {latitude, longitude} = position.coords;
+                    const { latitude, longitude } = position.coords;
                     await fetch('https://maps.googleapis.com/maps/api/geocode/json?address=' + latitude + ',' + longitude + '&key=' + "AIzaSyD2c4H1Ldomf95Y_dBG64KbNvE9tzmLDbk")
-                    .then((response) => response.json())
-                    .then((responseJson) => {
+                        .then((response) => response.json())
+                        .then((responseJson) => {
                             // latitude = latitude;
                             // longitude = longitude;
                             // address = responseJson.results[0].formatted_address;
@@ -84,7 +84,7 @@ const WebScreen = (props) => {
                             // code = responseJson.results[0].address_components[6].short_name;
                             // country_name = responseJson.results[0].address_components[6].long_name;
 
-                            console.log('ADDRESS GEOCODE is BACK!! => ' + JSON.stringify(responseJson));
+                            // console.log('ADDRESS GEOCODE is BACK!! => ' + JSON.stringify(responseJson));
                             setLatitude(latitude);
                             setLongitude(longitude);
                             setCountry_name(responseJson.results[0].address_components[6].long_name);
@@ -112,30 +112,33 @@ const WebScreen = (props) => {
             onMessage={onMessage}
             overScrollMode='never'
             pullToRefreshEnabled={true}
-            onLoadEnd={() =>  {
+            onLoadEnd={() => {
                 setVisible(false)
             }}
-            source={{ uri: `https://www.dev.listingsgoto.com/?device=mobile&latitude=${latitude}&longitude=${longitude}&address=${address}&city=${city}&code=${code}&country_name=${country_name}` }} style={{ marginTop: 20 }}
-            renderLoading={() => 
-                {
-                    if(visible){
-                        <ActivityIndicator
-                            style={{
-                                position: "absolute",
-                                top: 0,
-                                left: 0,
-                                right: 0,
-                                bottom: 0,
-                                jusityContent: "space-around",
-                                flexWrap: "wrap",
-                                alignContent: "center",
-                            }}
-                            size="large"
-                        />
-                    }
+            incognito={true}
+            cacheEnabled={false}
+            cacheMode={'LOAD_NO_CACHE'}
+            // https://listingsgoto.com/
+            source={{ uri: `https://listingsgoto.com/?device=mobile&latitude=${latitude}&longitude=${longitude}&address=${address}&city=${city}&code=${code}&country_name=${country_name}` }} style={{ marginTop: 20 }}
+            renderLoading={() => {
+                if (visible) {
+                    <ActivityIndicator
+                        style={{
+                            position: "absolute",
+                            top: 0,
+                            left: 0,
+                            right: 0,
+                            bottom: 0,
+                            jusityContent: "space-around",
+                            flexWrap: "wrap",
+                            alignContent: "center",
+                        }}
+                        size="large"
+                    />
                 }
-            } 
-            />
+            }
+            }
+        />
     }
     // 
     return (
