@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>BGTaskSchedulerPermittedIdentifiers</key>
-	<string>To show nearby properties 1</string>
+	<string>To show nearby properties</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>To show nearby properties 2</string>
+	<string>To show nearby properties</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
