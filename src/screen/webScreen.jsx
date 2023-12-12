@@ -11,9 +11,9 @@ import {
 
 import { WebView } from 'react-native-webview';
 
-import { request, PERMISSIONS, RESULTS } from 'react-native-permissions';
 import Geolocation from '@react-native-community/geolocation';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
+import Config from "react-native-config";
 
 // import Geocoding from 'react-native-geocoder-reborn';
 
@@ -112,59 +112,6 @@ const WebScreen = (props) => {
     };
 
 
-    React.useEffect(() => {
-        // async function requestLocationPermission() {
-        //     let getStatus = "";
-        //     if (Platform.OS === 'ios') {
-        //         getStatus = await request(PERMISSIONS.IOS.LOCATION_WHEN_IN_USE); // For iOS
-        //     }
-        //     else {
-        //         getStatus = await request(PERMISSIONS.ANDROID.ACCESS_FINE_LOCATION); // For Android
-        //     }
-        //     setStatus(getStatus)
-        // }
-        // requestLocationPermission();
-
-
-    }, []);
-
-    React.useEffect(() => {
-        // getCurrentPosition = () => {
-        //     // Get the current location
-        //     Geolocation.getCurrentPosition(
-        //         async (position) => {
-        //             const { latitude, longitude } = position.coords;
-        //             await fetch('https://maps.googleapis.com/maps/api/geocode/json?address=' + latitude + ',' + longitude + '&key=' + "AIzaSyD2c4H1Ldomf95Y_dBG64KbNvE9tzmLDbk")
-        //                 .then((response) => response.json())
-        //                 .then((responseJson) => {
-        //                     // latitude = latitude;
-        //                     // longitude = longitude;
-        //                     // address = responseJson.results[0].formatted_address;
-        //                     // city = responseJson.results[0].address_components[5].long_name;
-        //                     // code = responseJson.results[0].address_components[6].short_name;
-        //                     // country_name = responseJson.results[0].address_components[6].long_name;
-
-        //                     // console.log('ADDRESS GEOCODE is BACK!! => ' + JSON.stringify(responseJson));
-        //                     setLatitude(latitude);
-        //                     setLongitude(longitude);
-        //                     setCountry_name(responseJson.results[0].address_components[6].long_name);
-        //                     setCode(responseJson.results[0].address_components[6].short_name);
-        //                     setCity(responseJson.results[0].address_components[5].long_name);
-        //                     setAddress(responseJson.results[0].formatted_address);
-        //                 })
-        //         },
-        //         (error) => {
-        //             console.error('Error getting location:', error);
-        //         },
-        //         { enableHighAccuracy: false, timeout: 20000, maximumAge: 1000 }
-        //     );
-        //     // Location permission has been granted by the user.
-        // };
-        // if (status === RESULTS.GRANTED) {
-        //     getCurrentPosition();
-        // }
-    }, [status]);
-
     const WebviewRender = () => {
         return <WebView
             injectedJavaScript={getGeoLocationJS()}
@@ -203,7 +150,7 @@ const WebScreen = (props) => {
 
             cacheEnabled={true}
             // cacheMode={'LOAD_NO_CACHE'}
-            source={{ uri: `https://listingsgoto.com` }} style={{ marginTop: isIOS ? 0 : 10 }}
+            source={{ uri: Config?.PROJECT_URL }} style={{ marginTop: isIOS ? 0 : 10 }}
 
             geolocationEnabled={true}
             allowsInlineMediaPlayback={true}
@@ -237,6 +184,8 @@ const WebScreen = (props) => {
                 <StatusBar translucent backgroundColor={"#091b29"} barStyle="light-content" />
                 <SafeAreaView style={{ flex: 1, paddingBottom: isIOS && height < 812 ? -1 : -40 }}>
                     <WebviewRender />
+                  <Text>{Config?.PROJECT_URL}</Text>
+                  <Text>zsdfsdsfdsdsfd</Text>
                 </SafeAreaView>
             </SafeAreaProvider>
         </View>

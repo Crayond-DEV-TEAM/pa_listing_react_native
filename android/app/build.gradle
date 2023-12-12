@@ -1,6 +1,15 @@
 apply plugin: "com.android.application"
 apply plugin: "com.facebook.react"
 
+
+project.ext.envConfigFiles = [
+    amenitiesgoto: ".env.amenitiesgoto",
+    listing: ".env.listing",
+    realtygoto: ".env.realtygoto",
+]
+
+apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
+
 /**
  * This is the configuration block to customize your React Native Android app.
  * By default you don't need to apply any configuration, just uncomment the lines you need.
@@ -81,6 +90,29 @@ android {
         versionCode 3
         versionName "0.0.3"
     }
+
+    flavorDimensions "default"
+    productFlavors {
+        amenitiesgoto {
+            minSdkVersion rootProject.ext.minSdkVersion
+            applicationId 'com.app.pa_amenitiesgoto'
+            targetSdkVersion rootProject.ext.targetSdkVersion
+            resValue "string", "build_config_package", "com.app.pa_listingsgoto"
+        }
+        listing {
+            minSdkVersion rootProject.ext.minSdkVersion
+            applicationId 'com.app.paListing'
+            targetSdkVersion rootProject.ext.targetSdkVersion
+            resValue "string", "build_config_package", "com.app.pa_listingsgoto"
+        }
+        realtygoto {
+            minSdkVersion rootProject.ext.minSdkVersion
+            applicationId 'com.app.paRealtygoto'
+            targetSdkVersion rootProject.ext.targetSdkVersion
+            resValue "string", "build_config_package", "com.app.pa_listingsgoto"
+        }
+    }
+
     signingConfigs {
         debug {
             storeFile file('debug.keystore')
