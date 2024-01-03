@@ -183,9 +183,10 @@ const WebScreen = (props) => {
             <SafeAreaProvider style={{ flex: 1 }}>
                 <StatusBar translucent backgroundColor={"#091b29"} barStyle="light-content" />
                 <SafeAreaView style={{ flex: 1, paddingBottom: isIOS && height < 812 ? -1 : -40 }}>
-                    <WebviewRender />
+                  <WebviewRender />
+                    {/* 
                   <Text>{Config?.PROJECT_URL}</Text>
-                  <Text>zsdfsdsfdsdsfd</Text>
+                  <Text>zsdfsdsfdsdsfd</Text> */}
                 </SafeAreaView>
             </SafeAreaProvider>
         </View>
