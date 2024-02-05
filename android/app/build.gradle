@@ -98,6 +98,8 @@ android {
             applicationId 'com.app.pa_amenitiesgoto'
             targetSdkVersion rootProject.ext.targetSdkVersion
             resValue "string", "build_config_package", "com.app.pa_listingsgoto"
+            versionName "0.0.1"
+            versionCode 1
         }
         listing {
             minSdkVersion rootProject.ext.minSdkVersion
@@ -107,9 +109,11 @@ android {
         }
         realtygoto {
             minSdkVersion rootProject.ext.minSdkVersion
-            applicationId 'com.app.paRealtygoto'
+            applicationId 'com.app.pa_listingsgoto'
             targetSdkVersion rootProject.ext.targetSdkVersion
             resValue "string", "build_config_package", "com.app.pa_listingsgoto"
+            versionName "0.0.4"
+            versionCode 4
         }
     }
 
