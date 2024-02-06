@@ -5,7 +5,7 @@ apply plugin: "com.facebook.react"
 project.ext.envConfigFiles = [
     amenitiesgoto: ".env.amenitiesgoto",
     listing: ".env.listing",
-    realtygoto: ".env.realtygoto",
+    realtygoto: ".env.realtygoto"
 ]
 
 apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"

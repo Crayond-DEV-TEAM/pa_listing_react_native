@@ -68,7 +68,7 @@ target 'com.app.pa-listingsgoto' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-  target 'com.app.pa-listingsgotoTests' do
+  target 'AmenitiesGOTO' do
     inherit! :complete
     # Pods for testing
   end
