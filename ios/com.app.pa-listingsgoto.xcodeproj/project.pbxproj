@@ -18,6 +18,14 @@
 		AF5EBBF32B7212D7007F6302 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		AF5EBBF42B7212D7007F6302 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		AF5EBC332B7259EA007F6302 /* LaunchScreenAmenities.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF5EBC322B7259EA007F6302 /* LaunchScreenAmenities.storyboard */; };
+		AFEA160D2BA0B43A00830350 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		AFEA160E2BA0B43A00830350 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		AFEA16102BA0B43A00830350 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		AFEA16112BA0B43A00830350 /* libPods-com.app.pa-listingsgoto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 438784BBBCB3CB6E37995348 /* libPods-com.app.pa-listingsgoto.a */; };
+		AFEA16142BA0B43A00830350 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		AFEA16232BA0BE8500830350 /* LaunchScreenLifestyle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFEA16212BA0BE5200830350 /* LaunchScreenLifestyle.storyboard */; };
+		AFEA16242BA0BEB900830350 /* LifestyleListingGOTO-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFEA161C2BA0B43B00830350 /* LifestyleListingGOTO-Info.plist */; };
+		AFEA16282BA0C2CE00830350 /* LifestyleLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = AFEA16272BA0C2CE00830350 /* LifestyleLogo.png */; };
 		C5A1D82FA2336ED7BC47A402 /* libPods-com.app.pa-listingsgoto-AmenitiesGOTO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE8202A780C78E2A31708EA3 /* libPods-com.app.pa-listingsgoto-AmenitiesGOTO.a */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +49,10 @@
 		AF5EBBFB2B7212D7007F6302 /* AmenitiesGOTO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmenitiesGOTO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF5EBBFC2B7212D7007F6302 /* AmenitiesGOTO-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "AmenitiesGOTO-Info.plist"; path = "/Users/manoj/Desktop/Projects/PA/pa_listing_react_native/ios/AmenitiesGOTO-Info.plist"; sourceTree = "<absolute>"; };
 		AF5EBC322B7259EA007F6302 /* LaunchScreenAmenities.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreenAmenities.storyboard; sourceTree = "<group>"; };
+		AFEA161B2BA0B43A00830350 /* LifestyleListingGOTO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifestyleListingGOTO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFEA161C2BA0B43B00830350 /* LifestyleListingGOTO-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "LifestyleListingGOTO-Info.plist"; path = "/Users/manoj/Desktop/Projects/PA/pa_listing_react_native/ios/LifestyleListingGOTO-Info.plist"; sourceTree = "<absolute>"; };
+		AFEA16212BA0BE5200830350 /* LaunchScreenLifestyle.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreenLifestyle.storyboard; sourceTree = "<group>"; };
+		AFEA16272BA0C2CE00830350 /* LifestyleLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LifestyleLogo.png; sourceTree = "<group>"; };
 		DA9A866A881B550EB12969BA /* Pods-com.app.pa-listingsgoto-AmenitiesGOTO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-com.app.pa-listingsgoto-AmenitiesGOTO.release.xcconfig"; path = "Target Support Files/Pods-com.app.pa-listingsgoto-AmenitiesGOTO/Pods-com.app.pa-listingsgoto-AmenitiesGOTO.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FE8202A780C78E2A31708EA3 /* libPods-com.app.pa-listingsgoto-AmenitiesGOTO.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-com.app.pa-listingsgoto-AmenitiesGOTO.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +73,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5A1D82FA2336ED7BC47A402 /* libPods-com.app.pa-listingsgoto-AmenitiesGOTO.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFEA160F2BA0B43A00830350 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFEA16102BA0B43A00830350 /* (null) in Frameworks */,
+				AFEA16112BA0B43A00830350 /* libPods-com.app.pa-listingsgoto.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,7 +114,9 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				AFEA16272BA0C2CE00830350 /* LifestyleLogo.png */,
 				AF5EBC322B7259EA007F6302 /* LaunchScreenAmenities.storyboard */,
+				AFEA16212BA0BE5200830350 /* LaunchScreenLifestyle.storyboard */,
 			);
 			name = "com.app.pa-listingsgoto";
 			sourceTree = "<group>";
@@ -126,6 +149,7 @@
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
 				AF5EBBFC2B7212D7007F6302 /* AmenitiesGOTO-Info.plist */,
+				AFEA161C2BA0B43B00830350 /* LifestyleListingGOTO-Info.plist */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -137,6 +161,7 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* com.app.pa-listingsgoto.app */,
 				AF5EBBFB2B7212D7007F6302 /* AmenitiesGOTO.app */,
+				AFEA161B2BA0B43A00830350 /* LifestyleListingGOTO.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -201,6 +226,28 @@
 			productReference = AF5EBBFB2B7212D7007F6302 /* AmenitiesGOTO.app */;
 			productType = "com.apple.product-type.application";
 		};
+		AFEA16092BA0B43A00830350 /* LifestyleListingGOTO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFEA16182BA0B43A00830350 /* Build configuration list for PBXNativeTarget "LifestyleListingGOTO" */;
+			buildPhases = (
+				AFEA160A2BA0B43A00830350 /* [CP] Check Pods Manifest.lock */,
+				AFEA160B2BA0B43A00830350 /* Start Packager */,
+				AFEA160C2BA0B43A00830350 /* Sources */,
+				AFEA160F2BA0B43A00830350 /* Frameworks */,
+				AFEA16122BA0B43A00830350 /* Resources */,
+				AFEA16152BA0B43A00830350 /* Bundle React Native code and images */,
+				AFEA16162BA0B43A00830350 /* [CP] Embed Pods Frameworks */,
+				AFEA16172BA0B43A00830350 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LifestyleListingGOTO;
+			productName = "com.app.pa-listingsgoto";
+			productReference = AFEA161B2BA0B43A00830350 /* LifestyleListingGOTO.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -229,6 +276,7 @@
 			targets = (
 				13B07F861A680F5B00A75B9A /* com.app.pa-listingsgoto */,
 				AF5EBBEA2B7212D7007F6302 /* AmenitiesGOTO */,
+				AFEA16092BA0B43A00830350 /* LifestyleListingGOTO */,
 			);
 		};
 /* End PBXProject section */
@@ -250,6 +298,17 @@
 				AF5EBBF32B7212D7007F6302 /* LaunchScreen.storyboard in Resources */,
 				AF5EBBF42B7212D7007F6302 /* Images.xcassets in Resources */,
 				AF5EBC332B7259EA007F6302 /* LaunchScreenAmenities.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFEA16122BA0B43A00830350 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFEA16232BA0BE8500830350 /* LaunchScreenLifestyle.storyboard in Resources */,
+				AFEA16142BA0B43A00830350 /* Images.xcassets in Resources */,
+				AFEA16242BA0BEB900830350 /* LifestyleListingGOTO-Info.plist in Resources */,
+				AFEA16282BA0C2CE00830350 /* LifestyleLogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +439,97 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-com.app.pa-listingsgoto-AmenitiesGOTO/Pods-com.app.pa-listingsgoto-AmenitiesGOTO-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		AFEA160A2BA0B43A00830350 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-com.app.pa-listingsgoto-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFEA160B2BA0B43A00830350 /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AFEA16152BA0B43A00830350 /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/.xcode.env",
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+		};
+		AFEA16162BA0B43A00830350 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-com.app.pa-listingsgoto/Pods-com.app.pa-listingsgoto-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-com.app.pa-listingsgoto/Pods-com.app.pa-listingsgoto-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-com.app.pa-listingsgoto/Pods-com.app.pa-listingsgoto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFEA16172BA0B43A00830350 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-com.app.pa-listingsgoto/Pods-com.app.pa-listingsgoto-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-com.app.pa-listingsgoto/Pods-com.app.pa-listingsgoto-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-com.app.pa-listingsgoto/Pods-com.app.pa-listingsgoto-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -456,6 +606,15 @@
 			files = (
 				AF5EBBEE2B7212D7007F6302 /* AppDelegate.mm in Sources */,
 				AF5EBBEF2B7212D7007F6302 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFEA160C2BA0B43A00830350 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFEA160D2BA0B43A00830350 /* AppDelegate.mm in Sources */,
+				AFEA160E2BA0B43A00830350 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -735,6 +894,72 @@
 			};
 			name = Release;
 		};
+		AFEA16192BA0B43A00830350 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-com.app.pa-listingsgoto.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon Lifestyle";
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q92NY88HWM;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "LifestyleListingGOTO-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = RealtyGOTO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.lifestyle.listingsgoto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		AFEA161A2BA0B43A00830350 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-com.app.pa-listingsgoto.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon Lifestyle";
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q92NY88HWM;
+				INFOPLIST_FILE = "LifestyleListingGOTO-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = RealtyGOTO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.lifestyle.listingsgoto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -761,6 +986,15 @@
 			buildConfigurations = (
 				AF5EBBF92B7212D7007F6302 /* Debug */,
 				AF5EBBFA2B7212D7007F6302 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFEA16182BA0B43A00830350 /* Build configuration list for PBXNativeTarget "LifestyleListingGOTO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFEA16192BA0B43A00830350 /* Debug */,
+				AFEA161A2BA0B43A00830350 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
