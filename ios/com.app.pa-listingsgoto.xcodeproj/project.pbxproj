@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C80B921A6F3F58F76C31292 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		067FB46324343D0C77844D7A /* Pods_com_app_pa_listingsgoto_AmenitiesGOTO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D84AC1E6898742AA728827 /* Pods_com_app_pa_listingsgoto_AmenitiesGOTO.framework */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		4A8B3864D69AC23F8B5D2C72 /* libPods-com.app.pa-listingsgoto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 438784BBBCB3CB6E37995348 /* libPods-com.app.pa-listingsgoto.a */; };
+		59D9945A06125185F311C11E /* Pods_com_app_pa_listingsgoto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F410039CDAFF54CA971A0F3A /* Pods_com_app_pa_listingsgoto.framework */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		AF5EBBEE2B7212D7007F6302 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		AF5EBBEF2B7212D7007F6302 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -20,18 +20,17 @@
 		AF5EBC332B7259EA007F6302 /* LaunchScreenAmenities.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF5EBC322B7259EA007F6302 /* LaunchScreenAmenities.storyboard */; };
 		AFEA160D2BA0B43A00830350 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		AFEA160E2BA0B43A00830350 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		AFEA16102BA0B43A00830350 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
-		AFEA16112BA0B43A00830350 /* libPods-com.app.pa-listingsgoto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 438784BBBCB3CB6E37995348 /* libPods-com.app.pa-listingsgoto.a */; };
 		AFEA16142BA0B43A00830350 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		AFEA16232BA0BE8500830350 /* LaunchScreenLifestyle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFEA16212BA0BE5200830350 /* LaunchScreenLifestyle.storyboard */; };
 		AFEA16242BA0BEB900830350 /* LifestyleListingGOTO-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFEA161C2BA0B43B00830350 /* LifestyleListingGOTO-Info.plist */; };
 		AFEA16282BA0C2CE00830350 /* LifestyleLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = AFEA16272BA0C2CE00830350 /* LifestyleLogo.png */; };
-		C5A1D82FA2336ED7BC47A402 /* libPods-com.app.pa-listingsgoto-AmenitiesGOTO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE8202A780C78E2A31708EA3 /* libPods-com.app.pa-listingsgoto-AmenitiesGOTO.a */; };
+		D7964EB956852488D681B2E0 /* Pods_com_app_pa_listingsgoto_LifestyleListingGOTO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86CAC7EC434E2F684C617157 /* Pods_com_app_pa_listingsgoto_LifestyleListingGOTO.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* com.app.pa-listingsgotoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "com.app.pa-listingsgotoTests.m"; sourceTree = "<group>"; };
+		0AAC68AEE1AD3536856DEF9E /* Pods-com.app.pa-listingsgoto-LifestyleListingGOTO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-com.app.pa-listingsgoto-LifestyleListingGOTO.debug.xcconfig"; path = "Target Support Files/Pods-com.app.pa-listingsgoto-LifestyleListingGOTO/Pods-com.app.pa-listingsgoto-LifestyleListingGOTO.debug.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* com.app.pa-listingsgoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "com.app.pa-listingsgoto.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "com.app.pa-listingsgoto/AppDelegate.h"; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = "com.app.pa-listingsgoto/AppDelegate.mm"; sourceTree = "<group>"; };
@@ -40,11 +39,13 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "com.app.pa-listingsgoto/main.m"; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-com.app.pa-listingsgoto-com.app.pa-listingsgotoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-com.app.pa-listingsgoto-com.app.pa-listingsgotoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4392A12AC88292D35C810B /* Pods-com.app.pa-listingsgoto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-com.app.pa-listingsgoto.debug.xcconfig"; path = "Target Support Files/Pods-com.app.pa-listingsgoto/Pods-com.app.pa-listingsgoto.debug.xcconfig"; sourceTree = "<group>"; };
-		438784BBBCB3CB6E37995348 /* libPods-com.app.pa-listingsgoto.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-com.app.pa-listingsgoto.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5709B34CF0A7D63546082F79 /* Pods-com.app.pa-listingsgoto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-com.app.pa-listingsgoto.release.xcconfig"; path = "Target Support Files/Pods-com.app.pa-listingsgoto/Pods-com.app.pa-listingsgoto.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-com.app.pa-listingsgoto-com.app.pa-listingsgotoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-com.app.pa-listingsgoto-com.app.pa-listingsgotoTests.debug.xcconfig"; path = "Target Support Files/Pods-com.app.pa-listingsgoto-com.app.pa-listingsgotoTests/Pods-com.app.pa-listingsgoto-com.app.pa-listingsgotoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		60D84AC1E6898742AA728827 /* Pods_com_app_pa_listingsgoto_AmenitiesGOTO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_com_app_pa_listingsgoto_AmenitiesGOTO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7120A88C12346E5A554DFA05 /* Pods-com.app.pa-listingsgoto-LifestyleListingGOTO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-com.app.pa-listingsgoto-LifestyleListingGOTO.release.xcconfig"; path = "Target Support Files/Pods-com.app.pa-listingsgoto-LifestyleListingGOTO/Pods-com.app.pa-listingsgoto-LifestyleListingGOTO.release.xcconfig"; sourceTree = "<group>"; };
 		7CC5DF10B1A726B7FCDD3C7A /* Pods-com.app.pa-listingsgoto-AmenitiesGOTO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-com.app.pa-listingsgoto-AmenitiesGOTO.debug.xcconfig"; path = "Target Support Files/Pods-com.app.pa-listingsgoto-AmenitiesGOTO/Pods-com.app.pa-listingsgoto-AmenitiesGOTO.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "com.app.pa-listingsgoto/LaunchScreen.storyboard"; sourceTree = "<group>"; };
+		86CAC7EC434E2F684C617157 /* Pods_com_app_pa_listingsgoto_LifestyleListingGOTO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_com_app_pa_listingsgoto_LifestyleListingGOTO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-com.app.pa-listingsgoto-com.app.pa-listingsgotoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-com.app.pa-listingsgoto-com.app.pa-listingsgotoTests.release.xcconfig"; path = "Target Support Files/Pods-com.app.pa-listingsgoto-com.app.pa-listingsgotoTests/Pods-com.app.pa-listingsgoto-com.app.pa-listingsgotoTests.release.xcconfig"; sourceTree = "<group>"; };
 		AF5EBBFB2B7212D7007F6302 /* AmenitiesGOTO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmenitiesGOTO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF5EBBFC2B7212D7007F6302 /* AmenitiesGOTO-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "AmenitiesGOTO-Info.plist"; path = "/Users/manoj/Desktop/Projects/PA/pa_listing_react_native/ios/AmenitiesGOTO-Info.plist"; sourceTree = "<absolute>"; };
@@ -55,7 +56,7 @@
 		AFEA16272BA0C2CE00830350 /* LifestyleLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LifestyleLogo.png; sourceTree = "<group>"; };
 		DA9A866A881B550EB12969BA /* Pods-com.app.pa-listingsgoto-AmenitiesGOTO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-com.app.pa-listingsgoto-AmenitiesGOTO.release.xcconfig"; path = "Target Support Files/Pods-com.app.pa-listingsgoto-AmenitiesGOTO/Pods-com.app.pa-listingsgoto-AmenitiesGOTO.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		FE8202A780C78E2A31708EA3 /* libPods-com.app.pa-listingsgoto-AmenitiesGOTO.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-com.app.pa-listingsgoto-AmenitiesGOTO.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F410039CDAFF54CA971A0F3A /* Pods_com_app_pa_listingsgoto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_com_app_pa_listingsgoto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C80B921A6F3F58F76C31292 /* (null) in Frameworks */,
-				4A8B3864D69AC23F8B5D2C72 /* libPods-com.app.pa-listingsgoto.a in Frameworks */,
+				59D9945A06125185F311C11E /* Pods_com_app_pa_listingsgoto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5A1D82FA2336ED7BC47A402 /* libPods-com.app.pa-listingsgoto-AmenitiesGOTO.a in Frameworks */,
+				067FB46324343D0C77844D7A /* Pods_com_app_pa_listingsgoto_AmenitiesGOTO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,8 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFEA16102BA0B43A00830350 /* (null) in Frameworks */,
-				AFEA16112BA0B43A00830350 /* libPods-com.app.pa-listingsgoto.a in Frameworks */,
+				D7964EB956852488D681B2E0 /* Pods_com_app_pa_listingsgoto_LifestyleListingGOTO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,8 +125,9 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				19F6CBCC0A4E27FBF8BF4A61 /* libPods-com.app.pa-listingsgoto-com.app.pa-listingsgotoTests.a */,
-				FE8202A780C78E2A31708EA3 /* libPods-com.app.pa-listingsgoto-AmenitiesGOTO.a */,
-				438784BBBCB3CB6E37995348 /* libPods-com.app.pa-listingsgoto.a */,
+				F410039CDAFF54CA971A0F3A /* Pods_com_app_pa_listingsgoto.framework */,
+				60D84AC1E6898742AA728827 /* Pods_com_app_pa_listingsgoto_AmenitiesGOTO.framework */,
+				86CAC7EC434E2F684C617157 /* Pods_com_app_pa_listingsgoto_LifestyleListingGOTO.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -175,6 +175,8 @@
 				89C6BE57DB24E9ADA2F236DE /* Pods-com.app.pa-listingsgoto-com.app.pa-listingsgotoTests.release.xcconfig */,
 				7CC5DF10B1A726B7FCDD3C7A /* Pods-com.app.pa-listingsgoto-AmenitiesGOTO.debug.xcconfig */,
 				DA9A866A881B550EB12969BA /* Pods-com.app.pa-listingsgoto-AmenitiesGOTO.release.xcconfig */,
+				0AAC68AEE1AD3536856DEF9E /* Pods-com.app.pa-listingsgoto-LifestyleListingGOTO.debug.xcconfig */,
+				7120A88C12346E5A554DFA05 /* Pods-com.app.pa-listingsgoto-LifestyleListingGOTO.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -454,7 +456,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-com.app.pa-listingsgoto-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-com.app.pa-listingsgoto-LifestyleListingGOTO-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -502,15 +504,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-com.app.pa-listingsgoto/Pods-com.app.pa-listingsgoto-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-com.app.pa-listingsgoto-LifestyleListingGOTO/Pods-com.app.pa-listingsgoto-LifestyleListingGOTO-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-com.app.pa-listingsgoto/Pods-com.app.pa-listingsgoto-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-com.app.pa-listingsgoto-LifestyleListingGOTO/Pods-com.app.pa-listingsgoto-LifestyleListingGOTO-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-com.app.pa-listingsgoto/Pods-com.app.pa-listingsgoto-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-com.app.pa-listingsgoto-LifestyleListingGOTO/Pods-com.app.pa-listingsgoto-LifestyleListingGOTO-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AFEA16172BA0B43A00830350 /* [CP] Copy Pods Resources */ = {
@@ -519,15 +521,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-com.app.pa-listingsgoto/Pods-com.app.pa-listingsgoto-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-com.app.pa-listingsgoto-LifestyleListingGOTO/Pods-com.app.pa-listingsgoto-LifestyleListingGOTO-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-com.app.pa-listingsgoto/Pods-com.app.pa-listingsgoto-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-com.app.pa-listingsgoto-LifestyleListingGOTO/Pods-com.app.pa-listingsgoto-LifestyleListingGOTO-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-com.app.pa-listingsgoto/Pods-com.app.pa-listingsgoto-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-com.app.pa-listingsgoto-LifestyleListingGOTO/Pods-com.app.pa-listingsgoto-LifestyleListingGOTO-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
@@ -736,6 +738,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers/react/nativemodule/core",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers/platform/ios",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-NativeModulesApple/React_NativeModulesApple.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers/react/renderer/graphics/platform/ios",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
@@ -802,6 +812,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers/react/nativemodule/core",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers/platform/ios",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-NativeModulesApple/React_NativeModulesApple.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers/react/renderer/graphics/platform/ios",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
@@ -896,7 +914,7 @@
 		};
 		AFEA16192BA0B43A00830350 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-com.app.pa-listingsgoto.debug.xcconfig */;
+			baseConfigurationReference = 0AAC68AEE1AD3536856DEF9E /* Pods-com.app.pa-listingsgoto-LifestyleListingGOTO.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon Lifestyle";
 				CLANG_ENABLE_MODULES = YES;
@@ -910,7 +928,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -930,7 +948,7 @@
 		};
 		AFEA161A2BA0B43A00830350 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-com.app.pa-listingsgoto.release.xcconfig */;
+			baseConfigurationReference = 7120A88C12346E5A554DFA05 /* Pods-com.app.pa-listingsgoto-LifestyleListingGOTO.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon Lifestyle";
 				CLANG_ENABLE_MODULES = YES;
@@ -943,7 +961,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
