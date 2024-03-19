@@ -5,7 +5,8 @@ apply plugin: "com.facebook.react"
 project.ext.envConfigFiles = [
     amenitiesgoto: ".env.amenitiesgoto",
     listing: ".env.listing",
-    realtygoto: ".env.realtygoto"
+    realtygoto: ".env.realtygoto",
+    lifestylegoto:".env.lifestylegoto"
 ]
 
 apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
@@ -114,6 +115,14 @@ android {
             resValue "string", "build_config_package", "com.app.pa_listingsgoto"
             versionName "0.0.4"
             versionCode 4
+        }
+        lifestylegoto{
+            minSdkVersion rootProject.ext.minSdkVersion
+            applicationId 'com.app.pa_lifestylegoto'
+            targetSdkVersion rootProject.ext.targetSdkVersion
+            resValue "string", "build_config_package", "com.app.pa_listingsgoto"
+            versionName "0.0.1"
+            versionCode 2
         }
     }
 
